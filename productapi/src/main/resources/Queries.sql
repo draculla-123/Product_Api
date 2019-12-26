@@ -1,0 +1,19 @@
+DROP TABLE PRODUCT;
+
+CREATE TABLE PRODUCT (
+    PRODUCT_ID 	INT(10) AUTO_INCREMENT PRIMARY KEY,
+    PRODUCT_NAME VARCHAR(30),
+    PRODUCT_DESC VARCHAR(50),
+    QUANTITY INT(5),
+    PRICE DECIMAL(8,2)
+);
+
+Insert into PRODUCT(PRODUCT_NAME, PRODUCT_DESC, QUANTITY, PRICE) VALUES("Dove bathing soap", "Bathroom accessories", 50, 45);
+Insert into PRODUCT(PRODUCT_NAME, PRODUCT_DESC, QUANTITY, PRICE) values("Surf Excel", "Clothes washing", 30, 20);
+Insert into PRODUCT(PRODUCT_NAME, PRODUCT_DESC, QUANTITY, PRICE) values("Philips hair dryer", "Used for drying hairs", 10, 150.22);
+Insert into PRODUCT(PRODUCT_NAME, PRODUCT_DESC, QUANTITY, PRICE) values("Nail polish", "accessories", 50, 30.5);
+Insert into PRODUCT(PRODUCT_NAME, PRODUCT_DESC, QUANTITY, PRICE) values("BagPacks", "Daily ware", 15, 650.5);
+
+SELECT * FROM PRODUCT ;
+
+SHOW TABLES;
